@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.ecosystem.beta.controller.OrderControllerTest
--------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.294 s -- in com.ecosystem.beta.controller.OrderControllerTest
