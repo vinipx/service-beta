@@ -49,7 +49,8 @@ class OrderServiceImplTest {
     }
 
     private UserDto sampleUserDto() {
-        return new UserDto(1L, "john.doe", "john@example.com", "John", "Doe", Instant.parse("2024-01-01T00:00:00Z"));
+        return new UserDto(1L, "john.doe", "john@example.com", "John Doe",
+                Instant.parse("2024-01-01T00:00:00Z"), Instant.parse("2024-01-01T00:00:00Z"));
     }
 
     @Test
