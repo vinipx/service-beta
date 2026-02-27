@@ -1,0 +1,9 @@
+target/
+common-library/target/
+*.class
+*.jar
+!**/src/main/**/*.java
+!**/src/test/**/*.java
+.idea/
+*.iml
+.DS_Store
