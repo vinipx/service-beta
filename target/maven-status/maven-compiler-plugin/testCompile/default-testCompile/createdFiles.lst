@@ -1,0 +1,4 @@
+com/ecosystem/beta/repository/OrderRepositoryTest.class
+com/ecosystem/beta/controller/OrderControllerTest.class
+com/ecosystem/beta/service/OrderServiceImplTest.class
+com/ecosystem/beta/client/UserServiceClientTest.class
