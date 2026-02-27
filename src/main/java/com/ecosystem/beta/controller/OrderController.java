@@ -30,25 +30,25 @@ public class OrderController {
     @GetMapping
     public ResponseEntity<ApiResponse<List<OrderDto>>> getAllOrders() {
         List<OrderDto> orders = orderService.getAllOrders();
-        return ResponseEntity.ok(ApiResponse.success(orders));
+        return ResponseEntity.ok(ApiResponse.ok(orders));
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<ApiResponse<OrderDto>> getOrderById(@PathVariable Long id) {
         OrderDto order = orderService.getOrderById(id);
-        return ResponseEntity.ok(ApiResponse.success(order));
+        return ResponseEntity.ok(ApiResponse.ok(order));
     }
 
     @PostMapping
     public ResponseEntity<ApiResponse<OrderDto>> createOrder(@Valid @RequestBody OrderDto orderDto) {
         OrderDto created = orderService.createOrder(orderDto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(ApiResponse.success("Order created successfully", created));
+        return ResponseEntity.status(HttpStatus.CREATED).body(ApiResponse.ok(created));
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<ApiResponse<OrderDto>> updateOrder(@PathVariable Long id, @Valid @RequestBody OrderDto orderDto) {
         OrderDto updated = orderService.updateOrder(id, orderDto);
-        return ResponseEntity.ok(ApiResponse.success("Order updated successfully", updated));
+        return ResponseEntity.ok(ApiResponse.ok(updated));
     }
 
     @DeleteMapping("/{id}")
